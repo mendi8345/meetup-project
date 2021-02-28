@@ -1,0 +1,130 @@
+.meetup-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* left: 10px; */
+    right: 250px;
+}
+
+.logo-line {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* background: var(--dark-blue); */
+    opacity: 1;
+}
+
+.language {
+    position: relative;
+    top: 15px;
+    left: 10%;
+    width: 43px;
+    height: 20px;
+}
+
+.auth {
+    position: relative;
+    top: 15px;
+    left: 20%;
+    width: 108px;
+    height: 22px;
+}
+
+.logo {
+    position: relative;
+    top: 15px;
+    left: 70%;
+    /* right: -800px; */
+    width: 65px;
+    height: 32px;
+    opacity: 1;
+}
+
+.row {
+    flex-wrap: nowrap;
+    align-items: center;
+    /* margin: auto; */
+}
+
+.main-nav {
+    position: absolute;
+    top: 98px;
+    right: 0px;
+    width: 347px;
+    height: 19px;
+    text-align: right;
+    letter-spacing: -0.01px;
+    opacity: 1;
+}
+
+.title {
+    position: absolute;
+    top: 149px;
+    /* left: 591px; */
+    right: 0;
+    height: 38px;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--dark-blue);
+    text-align: right;
+    font: normal normal medium 32px/40px Rubik;
+    letter-spacing: 0px;
+    color: #0C3058;
+    opacity: 1;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.second-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 219px;
+    right: 0;
+    width: 100%;
+    height: 28px;
+    opacity: 1;
+}
+
+.second-nav a {
+    width: auto;
+    height: 19px;
+    position: relative;
+    opacity: 1;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/20px Rubik;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--dark-blue-75-);
+    text-align: right;
+    font: normal normal normal 16px/20px Rubik;
+    letter-spacing: 0px;
+    color: #0C3058BF;
+    opacity: 1;
+    margin-left: 30px;
+}
+
+.second-nav a:active {
+    width: 128px;
+    height: 19px;
+    opacity: 1;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--dark-blue);
+    text-align: right;
+    font: normal normal medium 16px/20px Rubik;
+    letter-spacing: 0px;
+    color: #0C3058;
+    opacity: 1;
+}
+
+.border-line {
+    position: absolute;
+    top: 244px;
+    right: 0;
+    width: 100%;
+    height: 0px;
+    border: 1px solid var(--divider-sidebar-icons);
+    border: 1px solid #C3CFE7;
+    opacity: 1;
+}

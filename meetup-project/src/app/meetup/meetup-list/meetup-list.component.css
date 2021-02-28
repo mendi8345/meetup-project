@@ -1,0 +1,22 @@
+/* :host {
+    position: relative;
+    top: 70px;
+    width: 80%;
+    margin: auto;
+    background: #F5F8FA 0% 0% no-repeat padding-box;
+} */
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    background: #F5F8FA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: auto;
+    padding: 0px 100px;
+}

@@ -1,0 +1,92 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Colors: */
+    --dark-blue: #0C3058;
+    --vivid-main-blue-92-: #0068F5;
+    --gray-stroke-text-fields: #BBBBCB;
+    --dark-main-blue: #0056D7;
+    --vivid-main-blue-80-: #0068F5;
+    --vivid-main-blue-40-: #0068F5;
+    --fde3d5: #FDE3D5;
+    --vivid-main-blue-4-selected: #0068F5;
+    --gray-bg: #F0F4FA;
+    --vivid-main-blue: #0068F5;
+    --vivid-main-blue-24-: #0068F5;
+    --divider-sidebar-icons: #C3CFE7;
+    --dark-blue-60-: #0C3058;
+    --dark-blue-75-: #0C3058;
+    --gray-bg-text-fields: #F9F9F9;
+    /* Font/text values */
+    --unnamed-font-family-rubik-regular: 'Rubik', sans-serif;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-10: 10px;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-24: 24px;
+    --unnamed-font-size-32: 32px;
+    --unnamed-font-size-60: 60px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-32: 32px;
+    --unnamed-line-spacing-40: 40px;
+    --unnamed-line-spacing-72: 72px;
+}
+
+
+/* Character Styles */
+
+.right-60pt {
+    font-family: var(--unnamed-font-family-rubik-regular);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-60);
+    line-height: var(--unnamed-line-spacing-72);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0c3058);
+}
+
+.right-32pt {
+    font-family: var(--unnamed-font-family-rubik-regular);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-32);
+    line-height: var(--unnamed-line-spacing-40);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0c3058);
+}
+
+.right-24pt {
+    font-family: var(--unnamed-font-family-rubik-regular);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-24);
+    line-height: var(--unnamed-line-spacing-32);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0c3058);
+}
+
+.right-16pt {
+    font-family: var(--unnamed-font-family-rubik-regular);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0c3058);
+}
+
+.right-10pt {
+    font-family: var(--unnamed-font-family-rubik-regular);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-10);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0c3058);
+}
