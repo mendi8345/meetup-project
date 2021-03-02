@@ -1,51 +1,26 @@
+<app-logo-line>
+</app-logo-line>
 <div class="meetup-detail" style="height: 100%;;">
-    <div class="row logo-line right-16pt">
-        <a class="row language">
-            <img src=".\assets\Layer.svg" alt="">
 
-            <span>
-    עברית
-  </span>
-
-        </a>
-        <a class="row auth">
-            <span>
-    כניסה\הרשמה
-  </span>
-            <img src=".\assets\user.svg" alt="">
-        </a>
-        <div class="row logo"> <span>
-    LOGO
-  </span>
-        </div>
-    </div>
     <div class="main-nav">
-        <a href="">{{meetup.description}}</a>
-        <a href="">
+        <a class="text-dark">{{meetup.description}}</a>
+        <a href=" ">
             <בית</a>
     </div>
-    <div class="title">
+    <div class="title ">
         {{meetup.description}}
     </div>
-    <div class="second-nav right-10pt">
-        <a routerLinkActive="active" href="">פרטים נוספים</a>
-        <a style="
-        letter-spacing: var(--unnamed-character-spacing-0);
-        color: var(--dark-blue);
-        text-align: right;
-        font: normal normal medium 16px/20px Rubik;
-        letter-spacing: 0px;
-        color: #0C3058;
-        text-decoration: underline;
-        opacity: 1;">רשימת המשתתפים
+    <div class="second-nav right-10pt ">
+        <a routerLinkActive="active " href=" ">פרטים נוספים</a>
+        <a style=" letter-spacing: var(--unnamed-character-spacing-0); color: var(--dark-blue); text-align: right; font: normal normal medium 16px/20px Rubik; letter-spacing: 0px; color: #0C3058; text-decoration: underline; opacity: 1; ">רשימת המשתתפים
         </a>
         <a>פרטים כלליים
         </a>
     </div>
-    <div class="border-line" style=""></div>
+    <div class="border-line " style=" "></div>
 
     <div>
-        <app-person-list [persons]="meetup.subscribers">
+        <app-person-list [persons]="meetup.subscribers ">
         </app-person-list>
     </div>
 </div>

@@ -1,6 +1,6 @@
 .person-item {
     position: relative;
-    right: 250px;
+    right: 200px;
     width: 672px;
     height: 92px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -66,4 +66,16 @@
     letter-spacing: 0px;
     color: #0C3058;
     opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    .person-item {
+        right: 0px;
+    }
+}
+
+@media(max-width:450px) {
+    .row>div {
+        font-size: 10px;
+    }
 }

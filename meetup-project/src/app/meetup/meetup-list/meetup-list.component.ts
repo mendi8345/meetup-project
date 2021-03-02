@@ -10,15 +10,29 @@ import {MeetupService} from '../meetup.service';
 })
 export class MeetupListComponent implements OnInit {
   meetups: Meetup[]
+  isEmpty=false
+  subscription
   constructor(private router: Router, private meetupService: MeetupService) { }
 
 
   ngOnInit(): void {
-    this.meetups=this.meetupService.meetups;
+    this.subscription=this.meetupService.meetupsChanged
+      .subscribe(
+        (meetups: Meetup[]) => {
+          this.meetups=meetups;
+          if (meetups.length==0)
+            this.isEmpty=true
+          else
+          this.isEmpty=false
+
+        }
+      );
+    this.meetups=this.meetupService.getmeetups();
+    console.log(this.meetups)
+    this.isEmpty=false
   }
-  // onItemClick(meetup:Meetup){
-  //   this.router.navigate([''])
-  //
-  // }
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 
 }

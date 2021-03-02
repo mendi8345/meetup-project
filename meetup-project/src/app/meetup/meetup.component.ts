@@ -9,9 +9,11 @@ import {MeetupService} from './meetup.service';
 })
 export class MeetupComponent implements OnInit {
 meetups:Meetup[]
+subscription
   constructor(private meetupService:MeetupService) { }
 
   ngOnInit(): void {
+  
   }
 
 }

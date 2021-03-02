@@ -1,3 +1,4 @@
+import {DatePipe} from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import {Meetup} from '../../meetup.model';
 
@@ -9,9 +10,12 @@ import {Meetup} from '../../meetup.model';
 export class MeetupItemComponent implements OnInit {
 @Input()meetup:Meetup
 @Input()index:Number
-  constructor() { }
+date:string
+  constructor(private datePipe: DatePipe) { }
 
   ngOnInit(): void {
+    console.log()
+    this.date=this.datePipe.transform(this.meetup.date,"yyyy-MM-dd")
   }
 
 }

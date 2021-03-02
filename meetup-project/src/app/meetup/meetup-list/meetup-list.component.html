@@ -1,5 +1,6 @@
 <div class="list">
     <app-meetup-item *ngFor="let meetup of meetups;let i=index " [meetup]="meetup " [index]="i" [routerLink]="[i]">
     </app-meetup-item>
+    <div *ngIf="isEmpty" class="empty taxt-alert"> no match for this search</div>
 
 </div>

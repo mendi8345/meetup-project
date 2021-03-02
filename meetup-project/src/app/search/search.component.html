@@ -1,35 +1,34 @@
 <div class="search-nav right-16pt">
-    <form class="search-form " action="">
-        <button class="search-btn input" type="submit">
-      <img src="../../assets/search.svg" alt="">
+    <form [formGroup]="meetupForm" (ngSubmit)="onSubmit()" (change)="filterMeetups()" class="search-form" action=" ">
+        <button class="search-btn input " type="submit" (click)="closeCalander()">
+      <img src=" ../../assets/search.svg " alt=" ">
       חפש</button>
-        <div class="date input row">
-            <div class="" style="width: 40px;
-            height: 33px;
-            border: 1px solid var(--gray-stroke-text-fields);
-            background: #F5F5F599 0% 0% no-repeat padding-box;
-            border: 1px solid #BBBBCB;
-            border-radius: 8px 0px 0px 8px;
-            opacity: 1;">
-                <img src="../../assets/calendar.svg" style="
-            height: 80%;
-            width: 100%;
-            opacity: 1;
-            margin: auto;">
-            </div>
-            <span>תאריך </span>
+        <div>
+
+            <label for="date "></label>
+            <input class=" date input " type="text " id="date " placeholder="הזן תאריך " (click)="openCalander() " value="מתאריך {{startDate}} - עד תאריך {{endDate}} " />
+
+
 
 
         </div>
 
-        <div class="area input">
-            <select name="area" id="area" style="-webkit-appearance: none;"></select>
-            <img src=".\assets\arrow-down-fill.svg" alt="">
-            <span>איזור </span>
+        <div>
+            <select class="area input " (change)="changeCity($event) " formControlName="location">
+            <option value="בחירת איזור" disabled >בחירת איזור</option>
+            <option *ngFor="let city of City " [ngValue]="city ">{{city}}</option>
+         </select>
         </div>
-        <div class="name input">
-            <span> שם אירוע</span>
+
+        <div>
+            <label for="name "></label>
+            <span *ngIf="name.invalid && (name.dirty || name.touched) " class="error text-danger ">ניתן להזין עד 100 תווים* </span>
+            <input class="name input " type="text " id="name " formControlName="name" placeholder="שם אירוע " />
+
+
         </div>
 
     </form>
+    <ngbd-datepicker-range [open]="calanderMode" (closeCalander)=" getDates($event) ">
+    </ngbd-datepicker-range>
 </div>
